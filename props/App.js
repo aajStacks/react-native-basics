@@ -24,8 +24,4 @@ export default class LotsOfGreetings extends Component {
 }
 
 // skip this line if using Create React Native App
-//AppRegistry.registerComponent('AwesomeProject', () => LotsOfGreetings);
-
-
-// skip this line if using Create React Native App
 //AppRegistry.registerComponent('AwesomeProject', () => Bananas); //Can always skip it as expo does it by default

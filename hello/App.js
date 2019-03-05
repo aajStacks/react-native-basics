@@ -15,7 +15,13 @@ export default class HelloWorldApp extends Component { //exports the class as a 
         <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
           <Text>Hello world!</Text>
         </View>
-      </View>
-    );
+      </View> //trace back to line 9 where we said that the render() method outputs
+      //only a single instance. We couldn't have printed "hello World!" twice using two
+      //distinct View Field. If you look closely, we embedded an inner view field into 
+      //an outer view field so that the render() method knows that it's
+      //rendering only one view field, which happens to be the outer view field
+      //from line 11 <View> ......
+      //to line 18 </View>
+      );
   }
 }
