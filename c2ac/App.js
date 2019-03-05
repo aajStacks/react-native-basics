@@ -1,3 +1,4 @@
+//Mohammed Hossain
 import React, { Component } from 'react';
 import { Alert, Text, View, Button, StyleSheet, TextInput } from 'react-native';
 
@@ -12,7 +13,7 @@ export default class MyView extends Component {
     for (var i = 0; i < this.state.text.length; i++) {
       asciivalues.push(this.state.text.charCodeAt(i));
     }
-    this.setState({ nextText: asciivalues.join(" ") });
+    this.setState({nextText: asciivalues.join(" ")});
   };
 
   render() {
